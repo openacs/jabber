@@ -5,8 +5,6 @@
 
 <fullquery name="get_dotlrn_communities">      
       <querytext>
-      FIX ME DECODE
- 
     select dotlrn_communities.community_id,
            dotlrn_communities.community_type,
            dotlrn_communities.pretty_name,
@@ -16,7 +14,7 @@
            dotlrn_member_rels_approved.rel_type,
            dotlrn_member_rels_approved.role,
            '' as role_pretty_name,
-           decode(dotlrn_community_admin_p(dotlrn_communities.community_id, dotlrn_member_rels_approved.user_id),'f',0,1) as admin_p
+           (case when dotlrn_community_admin_p(dotlrn_communities.community_id, dotlrn_member_rels_approved.user_id) = 'f' then 0 else 1 end) as admin_p
     from dotlrn_communities,
          dotlrn_member_rels_approved
     where dotlrn_member_rels_approved.user_id = :user_id

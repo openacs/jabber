@@ -22,7 +22,7 @@ ad_page_contract {
 
 
 set user_id [ad_conn user_id]
-ad_maybe_redirect_for_registration
+auth::require_login
 
 ad_form -name message -action message-2 -form {
     {screen:text(hidden) {value $screen}}

@@ -15,7 +15,7 @@ ad_page_contract {
 set context [list "Edit External Contact"]
 
 set user_id [ad_conn user_id]
-ad_maybe_redirect_for_registration
+auth::require_login
 
 db_multirow get_external_friends get_external_friends  {} {
     set row_check_p 1

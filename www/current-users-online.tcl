@@ -22,7 +22,7 @@ set all_users [whos_online::all_user_ids]
 set context [list "Online users"]
 
 set user_id [ad_conn user_id]
-ad_maybe_redirect_for_registration
+auth::require_login
 
 set any_is_online_p 0
 

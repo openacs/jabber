@@ -40,7 +40,7 @@ set trans_symbol [list]
 set return_url [ad_conn url]
 set context ""
 set user_id [ad_conn user_id]
-ad_maybe_redirect_for_registration
+auth::require_login
 set reg_need "0"
 
 set connstate [jb_getconnstate]

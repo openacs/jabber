@@ -28,7 +28,7 @@ ad_form -name search -action user-search\#result -form {
 
 
 set user_id [ad_conn user_id]
-ad_maybe_redirect_for_registration
+auth::require_login
 
 
 multirow create partys person_id first_names last_name 

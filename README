@@ -1,0 +1,17 @@
+
+In the extra c directory  you find the tarballs for the nsjabber module , a admin patch for the Jabber Server 1.4.x and a patched conference-0.4.1+ component for the Jabber Server. 
+
+
+
+Instalation:
+The package for openacs can be pre installed.
+
+The tarballs (in the c dir.) include README files with further instructions in their head directorys, the jabber package for openacs has a complet instalation documentation, for all parts of needed to let the jabber package work properly.
+
+
+Bjoern Kiesbye 
+email:bkiesbye@sussdorff-roy.com
+jid:bjoern_open@intranet.sussdorff-roy.com
+     
+copyright Sussdorff & Roy 2003
+    

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!-- CODEBASE EINGEBEN UND REFERENZ AUf DIE JNLP SEITE --> 
+<jnlp
+  codebase="http://complat.sourceforge.net/jnlp/" href="Enigma3.jnlp" >
+    <information> 
+       	<!-- Produktinformationen -->
+       <title>Enigma 3</title> 
+       <vendor>Die Horde</vendor>
+       <homepage>http://complat.sourceforge.net</homepage>
+       <description>Enigma 3 is a jabber client.</description> 
+       <description kind="short">E3 is a java jabber client!</description> 
+       	
+	<!-- auch offline startbar -->
+	<offline-allowed/> 
+     </information> 
+     <security>
+     	<!-- voller Festplattenzugriff -->
+	<all-permissions/>
+     </security>
+     <resources> 
+       <!-- Resourcen -->
+	<j2se version="1.4"/> 
+	<jar href="Enigma3.jar"/>
+     </resources> 
+     
+	<!-- Bezeichnung der Main Klasse -->	
+     <application-desc main-class="Enigma3">
+     	
+     </application-desc>
+</jnlp>

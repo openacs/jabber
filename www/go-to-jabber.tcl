@@ -1,0 +1,25 @@
+ad_page_contract {
+
+    @param user_id_friend
+    @param return_url
+} {
+
+    user_id_friend:notnull,integer
+    {return_url "index.tcl"} 
+} 
+
+set user_id [ad_conn user_id]
+ad_maybe_redirect_for_registration
+
+db_foreach get_screens {} {
+
+	if {$cur == $user_id} {
+	    set user_a $screen 
+	} else {
+	    set user_b $screen}
+} 
+
+set suc [jb_chat $user_a $user_b]
+
+
+ns_returnredirect "jabber-login.tcl?return_url=$return_url"

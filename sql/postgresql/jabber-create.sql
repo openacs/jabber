@@ -28,7 +28,7 @@ insert into jb_services (service , pretty_name , active_check_p) values ('icq' ,
 -- on the screenname so not everyone can add this screen to his buddylist
 
 create function inline_jab ()
-returns integer as'
+returns integer as '
 begin
 perform acs_object_type__create_type (
  ''jb_screen'' ,
@@ -328,7 +328,7 @@ create table jb_friends (
 -- implementation as object to use the permissioning system
 
 create or replace function inline_jab ()
-returns integer as'
+returns integer as '
 begin
 perform acs_object_type__create_type (
  ''jb_conference_room'' ,
@@ -511,7 +511,7 @@ end;
 
 
 create or replace function jb_conference_room__delete (integer )
-returns integer as'
+returns integer as '
 declare
 	p_room_id     alias for $1;
 begin
@@ -617,10 +617,10 @@ create index jb_conference_protocols_id on jb_conference_protocols(room_id, thre
 
 -- validate whether user is registered
 
-create or replace function jb_reg_validation(varchar , varchar)  returns integer as'
+create or replace function jb_reg_validation(varchar , varchar)  returns integer as '
 declare
 	screen_in    alias for $1;
-	regstate     alias for $2
+	regstate     alias for $2;
         v_user_id jb_screens.user_id%TYPE;     
     BEGIN 
      v_user_id := v_user_id;     
@@ -636,7 +636,7 @@ declare
 
  
 -- Update the online state of a user
-create or replace function jb_update_status (varchar , varchar ,  varchar , varchar) returns integer as'
+create or replace function jb_update_status (varchar , varchar ,  varchar , varchar) returns integer as '
 declare 
 	status_in      alias for $1;
 	resourc_in     alias for $2;
@@ -674,7 +674,7 @@ END;
 
 -- Clear the online states of every one on Login or Logout
 
-create or replace function jb_clear_status() returns integer as' 
+create or replace function jb_clear_status() returns integer as ' 
 Begin
 update jb_screens SET status=''offline'' , resourc=''offline'';
 return 1;
@@ -691,8 +691,8 @@ End;
 --or n > 0  in case there is something known about jid_in 
      
 create or replace function jb_subscription_check (varchar)
-returns integer as'
-decalre
+returns integer as '
+declare
 jid_in   alias for $1;
 r_exists integer;
 BEGIN
@@ -711,7 +711,7 @@ END;
 
 --inserts a new subscription request
 
-create or replace function jb_subscription_insert(varchar) returns integer as'
+create or replace function jb_subscription_insert(varchar) returns integer as '
 declare 
 	jid_in    alias for $1;
 BEGIN
@@ -724,7 +724,7 @@ END;
 
 --removes a certain subscription request
 
-create or replace function jb_subscription_del (varchar) returns integer as'
+create or replace function jb_subscription_del (varchar) returns integer as '
 DECLARE
 	jid_in alias for $1;
 BEGIN
@@ -741,7 +741,7 @@ END;
 
 --Find the user_id to a given jid, when someone invites us through  sending a jabber invite from his jabber client:
 
-create or replace function jb_get_user_id (varchar) returns integer AS'
+create or replace function jb_get_user_id (varchar) returns integer AS '
 DECLARE
  screen_in alias for $1;
  r_user_id integer;  
@@ -768,7 +768,7 @@ END;
 
 --Get the jid from a given user_id 
 
-create or replace function jb_get_jid (integer) returns VARCHAR AS'
+create or replace function jb_get_jid (integer) returns VARCHAR AS '
 DECLARE 
  user_id_in   alias for $1;
  r_jid        varchar(150);
@@ -789,7 +789,7 @@ END;
 --if a room is destroyed or the topic changes, the  discussion on the last topic (thread) ends ,insert this time as thread end time:
  
 
-create or replace function jb_conference_thread_finish(integer) returns integer as'
+create or replace function jb_conference_thread_finish(integer) returns integer as '
 DECLARE
 	thread_id_in    alias for $1;
 BEGIN
@@ -805,7 +805,7 @@ END;
 --When a room starts or the  topic changes a new Thread is created :
 
 
-create or replace function jb_conference_thread_new (integer , integer , varchar , varchar ,  integer) returns integer as'
+create or replace function jb_conference_thread_new (integer , integer , varchar , varchar ,  integer) returns integer as '
 DECLARE
 	thread_id_in       alias for $1;
 	room_id_in         alias for $2;
@@ -838,7 +838,7 @@ END;
 --When a message is received from a conference room it is stored in the db:
 
  
-create or replace function jb_conference_message(varchar ,  varchar , integer , integer , integer) returns integer as'
+create or replace function jb_conference_message(varchar ,  varchar , integer , integer , integer) returns integer as '
 DECLARE
 	jid_in        alias for $1;
 	message_in    alias for $2;
@@ -871,7 +871,7 @@ END;
 
 -- When a room is created (it is maybe recreated every Monday at 8:00 ) see if we already have a room_id for that room.
 
-create or replace function jb_conference_room_check(varchar) returns integer AS'
+create or replace function jb_conference_room_check(varchar) returns integer AS '
 DECLARE
 	room_name_in  alias for $1;
         r_room_id     integer;
@@ -894,7 +894,7 @@ END;
 -- conference_room is implemented as object
 
 
-create or replace function jb_conference_rooms_new ( integer ,  varchar , varchar , varchar) returns integer as' 
+create or replace function jb_conference_rooms_new ( integer ,  varchar , varchar , varchar) returns integer as ' 
 DECLARE
 	user_id_in      alias for $1;
 	creator_jid_in  alias for $2;
@@ -954,7 +954,7 @@ END;
 -- In the OACS4.x datamodel conference_room is implemented as object, so we do not have a sequence, but we do not want the c-module
 -- generate an error, so we give him an integer back, but we do not use this room_id (look above)
 
-create or replace function jb_conference_next_room_id() returns integer AS'
+create or replace function jb_conference_next_room_id() returns integer AS '
 DECLARE
  r_room_id integer;
 BEGIN
@@ -968,7 +968,7 @@ END;
 
 -- Get the next thread_id
 
-create or replace function jb_conference_next_thread_id() returns integer AS'
+create or replace function jb_conference_next_thread_id() returns integer AS '
 DECLARE
  r_thread_id integer;
 BEGIN
@@ -982,7 +982,7 @@ END;
  
 
 
-create or replace function jb_make_group_conference_group(varchar , integer) returns integer AS'
+create or replace function jb_make_group_conference_group(varchar , integer) returns integer AS '
 DECLARE
   p_room_name alias for $1;
   p_group_id  alias for $2;

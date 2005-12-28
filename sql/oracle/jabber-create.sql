@@ -16,7 +16,7 @@ create table jb_services (
 insert into jb_services (service , pretty_name , active_check_p) values ('jabber' , 'Jabber' , 't');
 insert into jb_services (service , pretty_name , active_check_p) values ('aim' , 'AIM' , 't');
 insert into jb_services (service , pretty_name , active_check_p) values ('yahoo' , 'Yahoo' , 't');
-insert into jb_services (service , pretty_name , active_check_p) values ('msn' , 'MSN' , 't')';
+insert into jb_services (service , pretty_name , active_check_p) values ('msn' , 'MSN' , 't');
 insert into jb_services (service , pretty_name , active_check_p) values ('icq' , 'ICQ' , 't');
 
 

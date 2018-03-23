@@ -373,7 +373,7 @@ This function returns <b>-1</b> on an error and <b>0</b> otherwise.
 <a name="jb_append_subject" >
 <H3>jb_new_subject</H3>
 <H4>Overview</H4>
-<p> Sending a old subject (Topic) to a  Room at the Jabber Server Conference service to append the recordings of this subject, incase the Room is not active it will be restarted automaticly.  
+<p> Sending a old subject (Topic) to a  Room at the Jabber Server Conference service to append the recordings of this subject, incase the Room is not active it will be restarted automatically.  
  </P>
 <H4>Syntax</H4>
 <P><i>int</i> <B>jb_new_subject</B> <I>RoomName  New_Thread_name  explaination_of_Thread_Name   existing_thread_id </I>  </P>

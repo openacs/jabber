@@ -134,7 +134,7 @@ Inserting a &lt;browes&gt; and a &lt;service&gt; section, into the jabber.xml fi
 
 <tr><td>       &lt;!-- The Browes section is only important if you want to let users use 
              your transporst, this is no technical configuration of the Server or
-             it's Transports, it's just to information Jabber Client Aplication's
+             it's Transports, it's just to information Jabber Client Application's
              what Transports are available.
         --&gt;    
 </td></tr>

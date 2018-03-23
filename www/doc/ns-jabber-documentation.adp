@@ -183,7 +183,7 @@ This function dosen't  return any errors yet.</P>
 <H4>Description</H4>
 <P><B>jb_remove </B>
 This function takes one parameter, the  <I>srcreenname</I> of the user to be unregistered.If a screenname contains invalid charakters this function returns an error.
-The  <I>screenname</I> and all information related to it, will be removed from the community db backend , as well as the Jabber acount relaeted to the <i>screenname</I>.   
+The  <I>screenname</I> and all information related to it, will be removed from the community db backend , as well as the Jabber account relaeted to the <i>screenname</I>.   
 The user will be imidiatly disconected from the Jabber server.
 <H4>NOTE</H4>
 <P>We work on a version of this function that returns a un-/successfull unregistration

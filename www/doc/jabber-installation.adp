@@ -66,7 +66,7 @@ Quit emacs C-x C-c, and start the server vor the first time.
 </p>
 <p>
 Now try to connect to your Jabber Server with your Jabber Client , and register a account, if it worecked 
-, register an acount for your aolserver.  
+, register an account for your aolserver.  
 </p>
 <p>
 Now install the jabberd server to /usr/local/jabber

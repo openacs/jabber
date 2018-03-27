@@ -19,7 +19,7 @@ add external contacts, edit and delete them.</p>
 
 <p>On your first visit to the index page of the Jabber system you will see a grey frame displaying
 your current messenger status. Due to the fact that at your first visit you are not already a registered
-user, you will see the avaiable Instant messenger platforms crossed and on the right you will see a form
+user, you will see the available Instant messenger platforms crossed and on the right you will see a form
 with which you will be able to register. Although you might have a Jabber ID already, we have to register a
 new Jabber Id for you on our Jabber server, so we can track your presence and distinguish you as an internal
 and not external user.</p>

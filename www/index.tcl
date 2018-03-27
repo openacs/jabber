@@ -63,7 +63,7 @@ ad_form -name user-register -action user-register -form {
     {return_url:text(hidden) {value "index"}}
 }
 
-#-----------------------------------------------------get avaiable services--------------------------------------------------
+#-----------------------------------------------------get available services--------------------------------------------------
 
 db_foreach get_services {} {
     set user_states($service) "offline"

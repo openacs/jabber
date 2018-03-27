@@ -2,7 +2,7 @@
 <property name="title">Register user</property>
 
 <if @connstate@ eq -1>
-<h1> Sorry, the IM Service is not avaiable now, please try again later. </h1>
+<h1> Sorry, the IM Service is not available now, please try again later. </h1>
 <br>
 <br>
 <br>

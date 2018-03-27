@@ -51,9 +51,9 @@ by an direct access to the database by the C-modules.</p>
 
 <b>jb_services</b>
 
-<p>Due to the fact that not all IM-services are avaiable for Jabber and that
+<p>Due to the fact that not all IM-services are available for Jabber and that
 new services could come in the future, this table stores those IM-services, 
-which are avaiable and enabled. In the future the admin can deactivate a certain
+which are available and enabled. In the future the admin can deactivate a certain
 IM-service or add new ones.
 </p>
 

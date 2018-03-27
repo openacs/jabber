@@ -8,7 +8,7 @@
 create table jb_services (
 			  service	 varchar2(255) primary key,
 			  pretty_name    varchar2(255),
-				-- active_check_p to control whether service is avaiable (t) or not (f)
+				-- active_check_p to control whether service is available (t) or not (f)
 			  active_check_p char check(active_check_p in ('t','f'))
 			 );
 

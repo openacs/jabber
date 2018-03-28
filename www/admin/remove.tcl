@@ -33,7 +33,7 @@ if {$success == "1"} {
 
     # delete rows from the database
 
-    for { set i 0 } {$i <= [llenght $user_screen_ids] - 1} {incr i} {
+    for { set i 0 } {$i <= [llength $user_screen_ids] - 1} {incr i} {
 
 	set user_screen_id [lindex $user_screen_ids $i]
 

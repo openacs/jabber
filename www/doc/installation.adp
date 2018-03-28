@@ -191,7 +191,7 @@ C-module. These C-module enables a jabber admin mod.</p>
    Now type<br>
 ?- tar -xvf mod_acs.tar to utar the file. 
 <br>
-The extracted files should be copyed to the directorys where they belong atomaticly. 
+The extracted files should be copyed to the directories where they belong atomaticly. 
 </p>
 
 
@@ -387,7 +387,7 @@ Now go to the spool directory of your jabber server,
 ?- cd spool
 <br>
 <br> 
-there you find towe files plain.xml.1 and plain.xml.2 , the number at the end stands for the server you are using i.e. jabber-1.4.1/1.4.2. If you have not installed the jabber server with make install , all you need to do is to move the file in the server directoy, type :
+there you find towe files plain.xml.1 and plain.xml.2 , the number at the end stands for the server you are using i.e. jabber-1.4.1/1.4.2. If you have not installed the jabber server with make install , all you need to do is to move the file in the server directory, type :
 <br>
 <br>
 ?- mv plain.xml.x yourserver.com/plain.xml

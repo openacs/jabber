@@ -3,7 +3,7 @@
 <property name="context">Rooms</property>
 <p><B>Bold entrys indicate Rooms, Rooms are indexed by Upper Letters . If there is some one in the Room you can <I>enter</I> the Room.
 If there is no one in the Room you can <I> Restart it</I></B></P>
-<p>Plain Entrys are indexed by numbers, they describe topics that where discussed in the above <B>Room</B>  , you can <I>Read</I> the discussions. <BR> Every Topic may have one ore more <B>Room Entrys</B>  diplayed just beneath them , those <B>Rooms</B> where created to to discuss a sub Topic of the above displayed major Topic    </P>
+<p>Plain Entrys are indexed by numbers, they describe topics that where discussed in the above <B>Room</B>  , you can <I>Read</I> the discussions. <BR> Every Topic may have one ore more <B>Room Entrys</B>  displayed just beneath them , those <B>Rooms</B> where created to to discuss a sub Topic of the above displayed major Topic    </P>
 <p><a href='create-room.tcl?party_id=@group_id@&create=true'>Create a new top level Room</a></p>
 <p><a href='invite-group.tcl?group_id=@group_id@'>Invite other Users to a Room</a></p>
 <if @is_room_table@  eq true>

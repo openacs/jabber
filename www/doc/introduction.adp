@@ -27,7 +27,7 @@ receives information for them, and the servers transfer messages and presence
 information among themselves. There can exist any number of Jabber servers which
 accept connections from clients as well as communicate to other Jabber servers.
 Each server functions independently of the others, and maintains its own user
-list. Any Jabber server can talk to any other Jabber server that is accessable
+list. Any Jabber server can talk to any other Jabber server that is accessible
 via the Internet. A particular user is associated with a specific server by a
 unique identefier (jid) that is like an emailadress.
 <p>
@@ -60,9 +60,9 @@ modular, it can be extended by modules (JSM) that implement speciale purposes,
 or comunicat with other deamons that register them selfs at the Jabber core
 Server (not like then the modules, they are not a part of it) , and translate
 the Jabber native protocol to a protocol of any other IM Service. This protocol
-translation deamons are called Transports, the comunication between a Transport
+translation deamons are called Transports, the communication between a Transport
 and the core Server is based on Networkprotokols such as TCP/IP and can be
-hosted on diferent Servers.The Jabber core Server can be configured in one
+hosted on different Servers.The Jabber core Server can be configured in one
 config file that is loaded into the Jabber core Server, it determines what
 modules of the JSM and what Transports should be loaded (on start up) along with
 detailed configuration information for each.</p>

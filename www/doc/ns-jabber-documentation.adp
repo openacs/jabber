@@ -507,7 +507,7 @@ a <i> Jid</i> to send the invite to,  the <I>RoomName</i> to which the recipient
 <H4>Description</H4>
 <P><B>jb_new_subject</B>
 This function is called with 
-a <i> RoomName</i> to send the subject change to,  the <I>TopicName</i> to change to and a <I>Discription</I> of the new topic. This function worcks only on Rooms that get recorded at the moment.
+a <i> RoomName</i> to send the subject change to,  the <I>TopicName</i> to change to and a <I>Description</I> of the new topic. This function worcks only on Rooms that get recorded at the moment.
 </p>
 <br>
 <br>

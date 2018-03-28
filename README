@@ -6,7 +6,7 @@ In the extra c directory  you find the tarballs for the nsjabber module , a admi
 Instalation:
 The package for openacs can be pre installed.
 
-The tarballs (in the c dir.) include README files with further instructions in their head directorys, the jabber package for openacs has a complet instalation documentation, for all parts of needed to let the jabber package work properly.
+The tarballs (in the c dir.) include README files with further instructions in their head directories, the jabber package for openacs has a complet instalation documentation, for all parts of needed to let the jabber package work properly.
 
 
 Bjoern Kiesbye 

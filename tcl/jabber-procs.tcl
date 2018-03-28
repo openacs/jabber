@@ -325,7 +325,7 @@ ad_proc jb_get_aim_screen_from_friend_id {user_id_friend } "This func returns th
 
 
 
-ad_proc jb_invite_user  { room_name version return_url } { This funktion returns the URL (href for a link) to  invite the user him self (entering a Room) to a Conference Room , the parameters are the 1. name of the room 2. wich version of the invite shuold be used (1 or2) , 3. the url of the page the user schould be redirected to after the invite has been send , 4. display will be what the browser shows to the user (diplayed name of the Link)   }  { 
+ad_proc jb_invite_user  { room_name version return_url } { This funktion returns the URL (href for a link) to  invite the user him self (entering a Room) to a Conference Room , the parameters are the 1. name of the room 2. wich version of the invite shuold be used (1 or2) , 3. the url of the page the user schould be redirected to after the invite has been send , 4. display will be what the browser shows to the user (displayed name of the Link)   }  { 
 
     set user_id [ad_get_user_id]
     set jid_to "" 

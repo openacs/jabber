@@ -35,9 +35,9 @@ db_foreach get_services "Select service from jb_services where active_check_p = 
                                        AND service = :service"]} {
             ns_log debug "edit-user-2  2.1"
 
-            #we have a screen for this user_id and no new , so we have to 1. completly remove the screen from jb_screens if no one else
-            #is interestet in this screen refcount = 1 and remove it from the jabber roster. 
-            #2. just delete the user_id from the screen_id     
+            #we have a screen for this user_id and no new , so we have to 1. completely remove the screen from jb_screens if no one else
+            #is interestet in this screen refcount = 1 and remove it from the jabber roster.
+            #2. just delete the user_id from the screen_id
 	    
 	    set old_screen_name $im_screen_name
 
@@ -107,7 +107,7 @@ db_foreach get_services "Select service from jb_services where active_check_p = 
 
 		} else {
 		    ns_log debug "edit-user-2  3.1.1.2"
-		    #the new screen doesen't exists jet create a new one and delete the user_id from the old 
+		    #the new screen doesn't exists jet create a new one and delete the user_id from the old 
                    
 		     if { $refcount == 1 } {
 ns_log debug "edit-user-2  3.1.1.2.1"

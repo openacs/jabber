@@ -94,7 +94,7 @@ same that you specified in your jabber.xml config file in the <host/>
  section.    
 <br>
 <br>
-The folowing param's are the FQN of your transports (aim. icq , etc.).
+The following param's are the FQN of your transports (aim. icq , etc.).
 <br>
 The next section has to be below the above one in your config.tcl.
 The section probably already exists in your config and you will only
@@ -152,7 +152,7 @@ depending on what driver you are using)
 <li>    ns_param MaxIdle 1000000000 </li>
 </ul>
 <br>
-<p>Finaly add this line to the mime type section.It is needed to let the Aolserver work together with Java WebStart.</p>
+<p>Finally add this line to the mime type section.It is needed to let the Aolserver work together with Java WebStart.</p>
 <table>
 <tr><td>ns_section ns/mimetypes
 <tr><td>ns_param  Default  text/plain</tr></td>
@@ -169,7 +169,7 @@ test it. Make sure you have installed the the mod_acs in your Jabber
 Server otherwise you won't be able to use the admin functionality.
 But if you like you can let aolserver send Messages to any valid jid,
 <br>
-use the folowing tcl commands:
+use the following tcl commands:
 <br>
 set conn_state [jb_login]  #conn_state will be 0 on succsess -1 on error  
 <br>

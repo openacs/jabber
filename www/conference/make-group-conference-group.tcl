@@ -21,7 +21,7 @@ if {[jb_getconnstate ] == -1 } {
      ns_returnredirect $return_url
 }
 
-# test if this group is already a conference group , if its blocked or if it doesn't meet our constrains,
+# test if this group is already a conference group , if its blocked or if it doesn't meet our constraints,
 
 if { $group_id > 10 } {
   

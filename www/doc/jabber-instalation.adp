@@ -36,13 +36,13 @@ edit the make files.
 >make
 </p>
 <p>
-If no errors occured you can now configure your jabber server.
+If no errors occurred you can now configure your jabber server.
 </p>
 <p>
 >emacs jabber.xml
 </p>
 <p>
-now replace the all "localhost" appearences with "your.domain.name"
+now replace the all "localhost" appearances with "your.domain.name"
 </p>
 
 <p>
@@ -155,7 +155,7 @@ Inserting a &lt;browes&gt; and a &lt;service&gt; section, into the jabber.xml fi
        &lt;!-- The Service section is very important, it tells jabberd wich Transports (lib's) to use,
             their two ways to use a Transport 1. load/run it in the main jabberd proccess.
             2.  load/run a Transport in a own jabberd proccess, and let the main jabberd proccess
-                connect to it via the network (prefered way )  
+                connect to it via the network (preferred way )  
         
             As well the service Section configures the Transports (wich url they use etc.) --&gt;
    

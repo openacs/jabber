@@ -165,7 +165,7 @@ This function takes two parameters, both are <I><b>screennames</b></I> (<I>a scr
 <H4>Description</H4>
 <P><B>jb_message </B>
 This funktion takes two parameters, the first is a full <I>jid</I> (of any valid Jabber Server including its transports) , the second is the <I>message</I> String.
-This function dosen't  return any errors yet.</P>
+This function doesn't  return any errors yet.</P>
 
 <br>
 <br>
@@ -205,12 +205,12 @@ information.</P>
 <P><B>[1] jb_removebudy </B> This function is not limited to the amount of parameters,each parameter must be a valid 
     <I><b>sreenname</B></I> (<I>a screenname is a jid with out the Server portion</I>).
     The first parameter has to be the <I>screenname</I> of the user who wants to remove someones jid from his roster (e.g. the one who is triggering this function), all other parameters are      the screennames to be removed from the firsts roster.   
-    If a <I>screenname</I> contains invalid charakters this function returns an error, if a     <I>screenname</I> is spelled corectly  but is not valid the function will not return an error and no action to this specific <I>screenname</I> takes place. The roster held in the users prefered Jabber Client (<I>if the user is online</I>) will not change till the user does a relogin.</P>
+    If a <I>screenname</I> contains invalid charakters this function returns an error, if a     <I>screenname</I> is spelled corectly  but is not valid the function will not return an error and no action to this specific <I>screenname</I> takes place. The roster held in the users preferred Jabber Client (<I>if the user is online</I>) will not change till the user does a relogin.</P>
 
 <H4>Syntax</H4>
 <p> <b>[2] jb_removebuddy</b> <I> list1 list2 .... listn </I></p>
 <H4>Description</H4>
-<p><b>[2]jb_removebuddy</b> works like <b>[1]jb_removebuddy</b> exept that it gets past <I>lists</I> instaed of
+<p><b>[2]jb_removebuddy</b> works like <b>[1]jb_removebuddy</b> except that it gets past <I>lists</I> instaed of
 simple variables. A list consists of :</p>
 <p>
 <table align="center" border="1">
@@ -488,7 +488,7 @@ Structure of the ns_set from a value of a returned ns_set:
 <H4>Description</H4>
 <P><B>jb_invite</B>
 This function is called with 
-a <i> Jid</i> to send the invite to,  the <I>RoomName</i> to which the recipient should be invited to, the <I>Topic</I> that will be discused in the room, a  <I>A short message</I> that lets the recipient know why he got invited , and the <I>Type</i> of the invite. The type can be 1 or 2 , standing for the versions v.1 and v.2. Right know v.1 is the prefered way to invite some one to a Conference Room, most Jabber Clients support this version , the Room <I>RoomName</I> doesn't needs to be recorded to send an invite to this Room. While v.2 is more power full but not all Jabber Clients support this version jet, the Room <i>RoomName</I> has to be recorded to send an invite to this Room.
+a <i> Jid</i> to send the invite to,  the <I>RoomName</i> to which the recipient should be invited to, the <I>Topic</I> that will be discused in the room, a  <I>A short message</I> that lets the recipient know why he got invited , and the <I>Type</i> of the invite. The type can be 1 or 2 , standing for the versions v.1 and v.2. Right know v.1 is the preferred way to invite some one to a Conference Room, most Jabber Clients support this version , the Room <I>RoomName</I> doesn't needs to be recorded to send an invite to this Room. While v.2 is more power full but not all Jabber Clients support this version jet, the Room <i>RoomName</I> has to be recorded to send an invite to this Room.
  
 </p>
 <br>

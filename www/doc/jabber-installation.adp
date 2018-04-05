@@ -39,13 +39,13 @@ edit the make files.
 >make
 </p>
 <p>
-If no errors occured you can now configure your jabber server.
+If no errors occurred you can now configure your jabber server.
 </p>
 <p>
 >emacs jabber.xml
 </p>
 <p>
-now replace the all "localhost" appearences with "your.domain.name"
+now replace the all "localhost" appearances with "your.domain.name"
 </p>
 
 <p>
@@ -156,16 +156,16 @@ Inserting a &lt;browes&gt; and a &lt;service&gt; section, into the jabber.xml fi
 <tr><td>
 
        &lt;!-- The Service section is very important, it tells jabberd wich Transports (lib's) to use,
-            their two ways to use a Transport 1. load/run it in the main jabberd proccess.
-            2.  load/run a Transport in a own jabberd proccess, and let the main jabberd proccess
-                connect to it via the network (prefered way )  
+            their two ways to use a Transport 1. load/run it in the main jabberd process.
+            2.  load/run a Transport in a own jabberd process, and let the main jabberd process
+                connect to it via the network (preferred way )  
         
             As well the service Section configures the Transports (wich url they use etc.) --&gt;
    
 </td></tr>
 <tr><td>
-       &lt;!-- 1. To load/run a Transport in the main jabberd proccess,  put a &lt;service&gt;-xml (like the example A.) 
-            into the jabber.xml file to let the main jabberd proccess load/configure/run the Transport. 
+       &lt;!-- 1. To load/run a Transport in the main jabberd process,  put a &lt;service&gt;-xml (like the example A.) 
+            into the jabber.xml file to let the main jabberd process load/configure/run the Transport. 
             After you entered this Section you can restart your server with:
             <br>
             &gt;jabberd/jabberd -c /usr/local/jabber/jabber.xml 
@@ -195,10 +195,10 @@ Inserting a &lt;browes&gt; and a &lt;service&gt; section, into the jabber.xml fi
 
 <tr><td>      
 
-       &lt;!-- 2. To let the main jabberd proccess connect to a Transport that runs in a seperate proccess. 
+       &lt;!-- 2. To let the main jabberd process connect to a Transport that runs in a seperate process. 
                you need a different styled <service> sektion in your jabber.xml file (Example B) to let the main jabberd
-               know how to connect to a  Transport that runs in a seperate proccess (may even on a seperate server)  
-               , and a seperate Transport-jabber.xml (Example C.) file, to let the seperate jabberd proccess 
+               know how to connect to a  Transport that runs in a seperate process (may even on a seperate server)  
+               , and a seperate Transport-jabber.xml (Example C.) file, to let the seperate jabberd process 
                load/configure/run The transport.   
 --&gt;
 </td></tr>
@@ -232,7 +232,7 @@ Inserting a &lt;browes&gt; and a &lt;service&gt; section, into the jabber.xml fi
 <tr><td></td></tr>
 <tr><td>    &lt;jabber&gt;</td></tr>
 <tr><td></td></tr>
-<tr><td>       &lt;!-- This section is to let this proccess know how to connect to the main jabberd proccess --&gt;</td></tr>
+<tr><td>       &lt;!-- This section is to let this process know how to connect to the main jabberd process --&gt;</td></tr>
 <tr><td></td></tr>
 <tr><td>       &lt;service id="yahoo-linker"&gt;</td></tr>
 <tr><td>         &lt;connect&gt;</td></tr>
@@ -264,20 +264,20 @@ Inserting a &lt;browes&gt; and a &lt;service&gt; section, into the jabber.xml fi
 </table>
 
 <p>
-You can now start your main jabberd proccess with:
+You can now start your main jabberd process with:
 </p>
 <p>
 &gt;jabberd/jabberd -c /usr/local/jabber/jabber.xml
 </p>
 <p>
-and to start the Transport in it's own proccess type:
+and to start the Transport in it's own process type:
 </p>
 <p>
 &gt;jabberd/jabberd -c /usr/local/jabber/yahoo-jabber.xml
 </p>
 <p>
-It will atomaticly try to connect to the main jabberd proccess via the network,
-you can start/stop/crash  the seperate Transport proccess without harming the main jabberd proccess.
+It will atomaticly try to connect to the main jabberd process via the network,
+you can start/stop/crash  the seperate Transport process without harming the main jabberd process.
 In case you run your Transport on a seperate Server you need a Jabber instalation on this Server as well.
  </p>
 

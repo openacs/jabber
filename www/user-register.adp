@@ -5,7 +5,7 @@
 
 
 <if @insert_check_p@ eq 0> 
-	<h2>Database Error Occured<br></h2>
+	<h2>Database Error Occurred<br></h2>
 	<p> Insert failed : @errormsg@</p> 
 </if>
 <if @insert_check_p@ eq 1>

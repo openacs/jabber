@@ -61,7 +61,7 @@ hard disk, so the user do not has to download the Applet all the time. There is 
 
 <h4>Webstart Enigma 3 (advanced)</h4>
 
-<p>The Enigma client is equiped with all the functionality of other clients like Trillian. Plus the functionality
+<p>The Enigma client is equipped with all the functionality of other clients like Trillian. Plus the functionality
 offered by the Jabber Applet you can register in other Instant Messaging services via this client, add buddies to
 that Instant Messaging services and participate on Jabber conferences (group chats). But this client is not as
 small as the normal Jabber Applet, it is 3.5 mb huge, so you have to download it. The combination of Enigma with

@@ -167,7 +167,7 @@ create table jb_room_party_map (
 	                       );
 </pre></td></tr></table>
 <p>
-This Table Maps a Room to a Party ( user/group),it difines who has access to a Room. Yet there are no permisions (other then access/noaccess a group maps to a Room or not ) definde for the objects acs_party and jb_conference_room. When  relations for this objects are intrduced, this table becomes an index for fast access, that is kept up to date via trigers (like it's done for the the acs_groups system) 
+This Table Maps a Room to a Party (user/group),it defines who has access to a Room. Yet there are no permisions (other then access/noaccess a group maps to a Room or not) defined for the objects acs_party and jb_conference_room. When relations for these objects are introduced, this table becomes an index for fast access, that is kept up to date via triggers (like it's done for the acs_groups system) 
 </p>
 
 

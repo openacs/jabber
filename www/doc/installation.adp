@@ -199,7 +199,7 @@ The extracted files should be copyed to the directories where they belong atomat
 <p>Change to the modules directory type:
 
 <br>?- cd jsm/modules
-<br>open the file 'Makefile' with your prefered editor,
+<br>open the file 'Makefile' with your preferred editor,
 (type: emacs Makefile )
 and put a entry saying 'mod_acs.o'  at the end of the 'jsm_modules_OBJECTS'
 section and save it.It should look like this when you are finished :
@@ -235,7 +235,7 @@ section and save it.It should look like this when you are finished :
 <br> 
 Now close your editor , and go back one directory (type: cd .. ),
 you are now in the '/your/path/to/jabber-1.4.x/jsm'  directory.
-Open the file 'Makefile' with your prefered editor 
+Open the file 'Makefile' with your preferred editor 
 (this is the second and last Makefile you have to edit),
 (type: emacs Makefile )
 and put a entry saying 'mod_acs.o'  at the end of the 'jsm_EXOBJECTS'
@@ -292,7 +292,7 @@ But if everything went right, its now time to configure your Jabber Server
 to work with the module.
 <br>
 In the same dir the '/your/path/to/jabber-1.4.x' open the jabber.xml file 
-with your prefered editor, type:
+with your preferred editor, type:
 <br>
 emacs jabber.xml
 <br>
@@ -418,7 +418,7 @@ The mod will work without this file , but you will not be able to register users
     Get the Remote (real) JID's of the Members in a Room. This way we know to wich OpenACS User belongs a Message. <br>
 <br>
    The nsjabber module for Aolserver will work with the normal Conference Module, 
-   but it's recomended to use the '+' version.  
+   but it's recommended to use the '+' version.  
   </p>
 
 <p>Download the conference-0.4.1+.tar to your server copy it to your Jabber Server directory and untar it.
@@ -436,7 +436,7 @@ The mod will work without this file , but you will not be able to register users
 </p>
 
 <p>
-   Open the jabber.xml configuration file again with your prefered Editor and enter the following section to the &lt;service&gt; section; 
+   Open the jabber.xml configuration file again with your preferred Editor and enter the following section to the &lt;service&gt; section; 
 </p>
 <table bgcolor="#C0c0c0">
 <tr><td><pre>&lt;service id='conference.localhost'&gt;</pre></tr></td>
@@ -499,7 +499,7 @@ server.Type :
 ?- jabberd -D
 <br>
 <br>
-Debugg output will showe errors if any occured.
+Debug output will show errors if any occurred.
 </p>
 <a href="#begin">Up</a>
 

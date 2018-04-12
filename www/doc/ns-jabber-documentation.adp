@@ -420,7 +420,7 @@ for {set i 0} {i < $row_count} {incr i}{
 <p>append html "&lt;/table&gt;"</p>
 
 <p>
-This example calls jb_activeconferencerooms and stores the ns_set ID  in the variable active_rooms, it checks if the function hasent returned <b>-1</b> (no error). Then it reads the size of the ns_set into the variable row_count . Then in a for loop , it loops through the returned ns_set putting it's keys in the first column of the table , and in the second column it first reads the ns_set ID from the keys (roomNames) value pair , and then from this ns_set it reads the value from position 1 (wich holds the topic of this room). 
+This example calls jb_activeconferencerooms and stores the ns_set ID  in the variable active_rooms, it checks if the function hasent returned <b>-1</b> (no error). Then it reads the size of the ns_set into the variable row_count . Then in a for loop , it loops through the returned ns_set putting its keys in the first column of the table , and in the second column it first reads the ns_set ID from the keys (roomNames) value pair , and then from this ns_set it reads the value from position 1 (wich holds the topic of this room).
 </p>
 <p>
 Structur of the  ns_set returned by jb_activeconferencerooms    

@@ -325,10 +325,10 @@ ad_proc jb_get_aim_screen_from_friend_id {user_id_friend } "This func returns th
 
 
 
-ad_proc jb_invite_user  { room_name version return_url } { This funktion returns the URL (href for a link) to  invite the user him self (entering a Room) to a Conference Room , the parameters are the 1. name of the room 2. wich version of the invite shuold be used (1 or2) , 3. the url of the page the user schould be redirected to after the invite has been send , 4. display will be what the browser shows to the user (displayed name of the Link)   }  { 
+ad_proc jb_invite_user  { room_name version return_url } { This function returns the URL (href for a link) to invite the user him self (entering a Room) to a Conference Room , the parameters are the 1. name of the room 2. which version of the invite shuold be used (1 or2) , 3. the url of the page the user should be redirected to after the invite has been send , 4. display will be what the browser shows to the user (displayed name of the Link)   }  {
 
     set user_id [ad_get_user_id]
-    set jid_to "" 
+    set jid_to ""
 
     if {[db_0or1row get_user_jid "SELECT im_screen_name FROM jb_screens WHERE user_id = :user_id AND service = 'jabber'" ]} { 
 
@@ -690,7 +690,7 @@ namespace eval notification {
 
     namespace eval imessage {
 
-        ad_proc send_and_email { to_user_id reply_object_id notification_type_id subject  content } {This procedure Sends a IM-msg to the user user_id,  it figures out wich system to use by User preferences and his current online state (the mesage will be trunct to 500 charackters), and sends an email } {
+        ad_proc send_and_email { to_user_id reply_object_id notification_type_id subject  content } {This procedure Sends a IM-msg to the user user_id,  it figures out which system to use by User preferences and his current online state (the message will be trunct to 500 characters), and sends an email } {
 
 	    ns_log notice "notification::imessage::send_and_mail 1"	
 	    set suc  [ notification::imessage::send $to_user_id $reply_object_id $notification_type_id "$subject"  "$content"]
@@ -704,7 +704,7 @@ namespace eval notification {
 	}
 	
 
-	ad_proc -public send_or_email {  to_user_id reply_object_id notification_type_id subject  content } { This procedure Sends a IM-msg to the user user_id,  it figures out wich system to use by User preferences and his current online state (the content will be trunct to 50 charackters). Or in case the user is offline it will send an email } {
+	ad_proc -public send_or_email {  to_user_id reply_object_id notification_type_id subject  content } { This procedure Sends a IM-msg to the user user_id,  it figures out which system to use by User preferences and his current online state (the content will be trunct to 50 characters). Or in case the user is offline it will send an email } {
 	    ns_log notice "notification::imessage::send_or_mail 1"
 	    set suc 0
     	    set suc  [ notification::imessage::send $to_user_id $reply_object_id $notification_type_id "$subject"  "$content"]
@@ -721,7 +721,7 @@ namespace eval notification {
 	}
 
 
-	ad_proc send {  to_user_id reply_object_id notification_type_id subject  content } { This procedure Sends a IM-msg to the user user_id,  it figures out wich system to use by User preferences and his current online state } {
+	ad_proc send {  to_user_id reply_object_id notification_type_id subject  content } { This procedure Sends a IM-msg to the user user_id,  it figures out which system to use by User preferences and his current online state } {
 
 	    ns_log notice "notification::imessage::sendbb"	
 	    set state 0

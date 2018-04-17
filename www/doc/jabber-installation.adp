@@ -195,10 +195,10 @@ Inserting a &lt;browes&gt; and a &lt;service&gt; section, into the jabber.xml fi
 
 <tr><td>      
 
-       &lt;!-- 2. To let the main jabberd process connect to a Transport that runs in a seperate process. 
+       &lt;!-- 2. To let the main jabberd process connect to a Transport that runs in a separate process. 
                you need a different styled <service> sektion in your jabber.xml file (Example B) to let the main jabberd
-               know how to connect to a  Transport that runs in a seperate process (may even on a seperate server)  
-               , and a seperate Transport-jabber.xml (Example C.) file, to let the seperate jabberd process 
+               know how to connect to a  Transport that runs in a separate process (may even on a separate server)  
+               , and a separate Transport-jabber.xml (Example C.) file, to let the separate jabberd process 
                load/configure/run The transport.   
 --&gt;
 </td></tr>
@@ -277,8 +277,8 @@ and to start the Transport in it's own process type:
 </p>
 <p>
 It will atomaticly try to connect to the main jabberd process via the network,
-you can start/stop/crash  the seperate Transport process without harming the main jabberd process.
-In case you run your Transport on a seperate Server you need a Jabber instalation on this Server as well.
+you can start/stop/crash  the separate Transport process without harming the main jabberd process.
+In case you run your Transport on a separate Server you need a Jabber instalation on this Server as well.
  </p>
 
 

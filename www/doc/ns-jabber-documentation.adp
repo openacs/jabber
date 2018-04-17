@@ -130,7 +130,7 @@ This function takes two parameters, both are <I><b>screennames</b></I> (<I>a scr
 <H4>Syntax</H4>
 <P><I>success</I> <B>jb_login</B> <I>void</I></P>
 <H4>Description</H4>
-<P><B>jb_login</B>This function takes no parameters, it logs the community client into the Jabber Server. A call to this function should be done on AOLServer startup, or after a restart of the Jabber Server. It returns (<I>success</I>)  0 on a successfull login and -1 otherwise.</P>
+<P><B>jb_login</B>This function takes no parameters, it logs the community client into the Jabber Server. A call to this function should be done on AOLServer startup, or after a restart of the Jabber Server. It returns (<I>success</I>)  0 on a successful login and -1 otherwise.</P>
 <H4>NOTE</H4>
 <P>A automatic login on AOLServer startup is in work but not implemented yet</P>
 
@@ -186,7 +186,7 @@ This function takes one parameter, the  <I>srcreenname</I> of the user to be unr
 The  <I>screenname</I> and all information related to it, will be removed from the community db backend , as well as the Jabber account relaeted to the <i>screenname</I>.   
 The user will be imidiatly disconected from the Jabber server.
 <H4>NOTE</H4>
-<P>We work on a version of this function that returns a un-/successfull unregistration
+<P>We work on a version of this function that returns a un-/successful unregistration
 information.</P> 
 
 <br>

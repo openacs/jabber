@@ -686,7 +686,7 @@ End;
 
 
 
---checks if jid_in is in the table of the subscription requests , we store them in ther because we may have to wait 
+--checks if jid_in is in the table of the subscription requests , we store them in there because we may have to wait 
 --for a while till some one (jid_in) answers the request, it returns 0 in case there is nothing known about jid_in
 --or n > 0  in case there is something known about jid_in 
      

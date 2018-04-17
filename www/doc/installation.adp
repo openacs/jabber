@@ -171,10 +171,10 @@ But if you like you can let aolserver send Messages to any valid jid,
 <br>
 use the following tcl commands:
 <br>
-set conn_state [jb_login]  #conn_state will be 0 on succsess -1 on error  
+set conn_state [jb_login]  #conn_state will be 0 on success -1 on error
 <br>
-set succsess   [jb_message "user@server"  "The Message string"]
-#will be 0 on succsess -1 when the client isn't logged in
+set success   [jb_message "user@server"  "The Message string"]
+#will be 0 on success -1 when the client isn't logged in
 <br>
 set conn_state [jb_logout]   
 </p>
@@ -297,7 +297,7 @@ with your preferred editor, type:
 emacs jabber.xml
 <br>
 you have probably done this before, now go to the '&lt;service&gt;' section and in 
-ther to the '&lt;load&gt;' section
+there to the '&lt;load&gt;' section
 insert a line saying :
 </p>
 
@@ -410,12 +410,12 @@ The mod will work without this file , but you will not be able to register users
 <br>
 <br>
 <p>Now you should install the Conference Module for the Jabber Server.
-   If you have already installed the commen Conference Module you schould change to our one,
-   it is usaly named like the oficial releas with an '+'  at the end,
-   it offers additional features witch make it more usefull for OpenACS.
+   If you have already installed the common Conference Module you should change to ours,
+   it is usually named like the official release with a '+'  at the end,
+   it offers additional features which make it more useful for OpenACS.
    The extra features are:<br> 
     Limit the creation of Rooms with a specific prefix (like 'offical_xyz') to Admins<br>
-    Get the Remote (real) JID's of the Members in a Room. This way we know to wich OpenACS User belongs a Message. <br>
+    Get the Remote (real) JID's of the Members in a Room. This way we know to which OpenACS User belongs a Message. <br>
 <br>
    The nsjabber module for Aolserver will work with the normal Conference Module, 
    but it's recommended to use the '+' version.  
@@ -423,11 +423,11 @@ The mod will work without this file , but you will not be able to register users
 
 <p>Download the conference-0.4.1+.tar to your server copy it to your Jabber Server directory and untar it.
 <br>?- tar -xvf conference-0.4.1+.tar 
-<br>know change to the confererence directory and build the binarys. Type:
+<br>now change to the confererence directory and build the binaries. Type:
 <br>?- cd conference-0.4.1+
 <br>?- make
 <br>
-<br> if the build was successfull you can now configure the Conference Module.
+<br> if the build was successful you can now configure the Conference Module.
 
 
 <p>

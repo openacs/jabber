@@ -6,7 +6,7 @@
 
 <if @insert_check_p@ eq 1>
 
- <p> Insert was successfull, new service is now available! </p>
+ <p> Insert was successful, new service is now available! </p>
 
 </if>
 <else>

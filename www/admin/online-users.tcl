@@ -10,7 +10,7 @@ ad_page_contract {
     ltext:onevalue
     get_users:multirow
     online_check_p:onevalue
-    statecolour:onevalue
+    statecolor:onevalue
 
 }
 
@@ -29,22 +29,22 @@ if { [db_0or1row reg_request {}] } {
 }
 
 
-multirow create get_users screen_id status statecolour im_screen_name service resource
+multirow create get_users screen_id status statecolor im_screen_name service resource
 db_foreach get_users "select * from jb_screens where status != 'offline'" {
     
     set online_check_p 1
     
     if { $status == "online" } {
-         set statecolour "green"
+         set statecolor "green"
     } elseif { $status == "away" } {
-         set statecolour "mediumslateblue"
+         set statecolor "mediumslateblue"
     } elseif { $status == "dnd" } {
-         set statecolour "navy"
+         set statecolor "navy"
     } else { 
-	set statecolour "black"
+	set statecolor "black"
     }
  
-    multirow append get_users $screen_id $status $statecolour $im_screen_name $service $resourc 
+    multirow append get_users $screen_id $status $statecolor $im_screen_name $service $resourc 
 } if_no_rows {
  
     set online_check_p 0

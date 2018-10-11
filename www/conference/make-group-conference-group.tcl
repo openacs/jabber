@@ -44,12 +44,12 @@ if { $group_id > 10 } {
 
 	if {$type == "start_room"} {
 	    
-	    # Check if the user is registerd with jabber, and if get his/her screen and online status
+	    # Check if the user is registered with jabber, and if get his/her screen and online status
 	    if {[db_0or1row get_jabber_user_screen ""]} {
 		set jid "$im_screen_name@[jb_get_transport_url_from_id [jb_get_transport_id_from_symbol "jabber"]]"
 	    } else {
 		
-		# the user is not registerd just redirect him to the jabber/index.tcl
+		# the user is not registered just redirect him to the jabber/index.tcl
 
 		ns_returnredirect "jabber/index"
 		ad_script_abort

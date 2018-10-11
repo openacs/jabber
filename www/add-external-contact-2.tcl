@@ -1,6 +1,6 @@
 ad_page_contract {
 
-    add new contact to IM-Adressbook
+    add new contact to IM-Addressbook
     inserts new rows in jb_friends
     @author Luis Mosteiro Fernandez
     @creation-date 2002-10-22

@@ -143,7 +143,7 @@ ns_log debug "edit-user-2  3.1.2"
 	    }
 	} else {
 ns_log debug "edit-user-2  3.2"
-         #we have no old_screen_id for this user_id , so check if we have to fully  create a a new one, or just inserting the old user_id.
+         #we have no old_screen_id for this user_id, so check if we have to fully create a new one, or just inserting the old user_id.
 	    if { [db_0or1row check_new_screen_exists "SELECT (screen_id) as new_screen_id  
                                                       FROM jb_screens 
                                                       WHERE im_screen_name = :user_screen_name 

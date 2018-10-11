@@ -16,8 +16,8 @@ ad_page_contract {
 
 
 
-# we send both version of invites to asure all clients recive the invite
-# This causesconflicts inside the conference module
+# We send both version of invites to asure all clients receive the invite.
+# This causes conflicts inside the conference module
 
 set suc [jb_invite $jid $room_name $room_subject $msg $version ]
 #set suc [jb_invite $jid $room_name $room_subject $msg 2 ]

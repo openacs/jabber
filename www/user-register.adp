@@ -4,11 +4,11 @@
 <H1>Jabber Register: </H1><hr>
 
 
-<if @insert_check_p@ eq 0> 
+<if @insert_check_p;literal@ false> 
 	<h2>Database Error Occurred<br></h2>
 	<p> Insert failed : @errormsg@</p> 
 </if>
-<if @insert_check_p@ eq 1>
+<if @insert_check_p;literal@ true>
 	<h2>New JabberID created: @jscreen@\@jabber_server</h2></h3>
 </if>
 <if @insert_check_p@ eq 2>

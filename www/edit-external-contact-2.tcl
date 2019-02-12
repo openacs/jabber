@@ -22,7 +22,7 @@ ad_page_contract {
 
 set user_id [ad_conn user_id]
 set peeraddr [ad_conn peeraddr]
-set db_nulling [db_null]
+set db_nulling ""
 
 if {$friend_first_name != $friend_first_name_old} {
 

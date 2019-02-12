@@ -13,7 +13,7 @@ ad_page_contract {
 
 
 set user_id [ad_conn user_id]
-set db_nulling [db_null]
+set db_nulling ""
 set peeraddr [ad_conn peeraddr]
 ns_log debug "edit-user-2  1"
 
